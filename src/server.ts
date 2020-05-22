@@ -1,4 +1,7 @@
+import 'reflect-metadata';
 import express from 'express';
+
+import '@shared/infra/typeorm';
 
 const app = express();
 
@@ -9,5 +12,6 @@ app.get('/test', (req, res) => {
 });
 
 app.listen(3333, () => {
+  // eslint-disable-next-line no-console
   console.log('Server is runing on port 3333');
 });
