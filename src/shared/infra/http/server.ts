@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import 'reflect-metadata';
 import 'express-async-errors';
+import 'dotenv/config';
 
 import express, { Request, Response, NextFunction } from 'express';
 import { errors } from 'celebrate';
